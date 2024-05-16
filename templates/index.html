@@ -1,0 +1,29 @@
+{% extends "base.html" %} {% block content %}
+
+<article>
+    <h1 >Notes</h1>
+    <p class="subtitle">by Matt Stubbs</h1>
+</article>
+
+
+{% set notes = get_section(path="notes/_index.md") %}
+{{ notes.description }}
+{% for post in notes.pages %}
+
+<section>
+    <h2><a href="{{ post.permalink }}">{{ post.title }}</a></h2>
+
+    <h3>
+        {{ post.date | date(format="%d %B %Y") }}
+    </h3>
+        {% if post.summary %}
+        {{ post.summary  | markdown }}
+        {% else %}
+
+        {{ post.content | safe }}
+        {% endif %}
+
+</section>
+
+{% endfor %}
+{% endblock content %}

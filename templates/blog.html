@@ -1,0 +1,20 @@
+{% extends "base.html" %} {% block content %}
+
+<h1 class="title">{{ section.title }}</h1>
+<!-- If you are using pagination, section.pages will be empty. You need to use the paginator object -->
+{% for year, posts in section.pages | group_by(attribute="year") %}
+<h2>{{ year }}</h2>
+<ul>
+    {% for page in posts %}
+    <li>
+        <a href="{{ page.permalink | safe }}" style="margin-right: 0.3rem"
+            >{{ page.title }}</a
+        >
+        {% if page.taxonomies.tags %} {% for tag in page.taxonomies.tags %}
+        <a href=""><em>#{{ tag }}</em></a>
+
+        {% endfor %} {% endif %}
+         {% endfor %}
+    </li>
+</ul>
+{% endfor %} {% endblock content %}
