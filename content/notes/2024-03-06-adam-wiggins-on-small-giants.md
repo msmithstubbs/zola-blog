@@ -1,5 +1,7 @@
 +++
 title = "Adam Wiggins on the ‘Small Giants’ Approach for Muse"
+[taxonomies]
+tags = ["quote"]
 +++
 
 
