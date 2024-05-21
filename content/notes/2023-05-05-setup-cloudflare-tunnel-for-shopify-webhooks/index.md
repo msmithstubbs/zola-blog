@@ -40,6 +40,4 @@ ingress:
 
 Then add a CNAME record for the domain:
 
-<img src="cloudflare-tunnel.png" />
-
 {{ figure(img="cloudflare-tunnel.png") }}

@@ -23,7 +23,9 @@ But Flexible SSL affects the whole site. Any requests on the root domain, where 
 ## Almost Full SSL with a page rule.
 The easiest option is to leave Full SSL enabled for the site and then create a [page rule](https://support.cloudflare.com/hc/en-us/articles/218411427) to use Flexible SSL just for the subdomain.
 
-![Screenshot of the Cloudflare page rule UI](cloudflare-page-rule.png)
+{{ figure(img="cloudflare-page-rule.png", alt="Screenshot of the Cloudflare page rule UI") }}
+
+![]()
 
 
 This means requests to `https://exampleapp.com` are secure all the way to the origin server. Requests to `https://static.exampleapp.com` are partly secure. Cloudflare uses HTTP to make the actual request to S3 which is fine for publicly available content like site stylesheets. The response is sent back to the user over HTTPS.
