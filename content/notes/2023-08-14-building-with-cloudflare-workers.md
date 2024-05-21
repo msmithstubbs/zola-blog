@@ -1,5 +1,6 @@
 +++
 title = "Building a lightweight cron job with Cloudflare Workers"
+aliases = ["cloudflare/workers/2023/08/14/building-with-cloudflare-workers/"]
 [taxonomies]
 tags = ["cloudflare", "workers"]
 +++

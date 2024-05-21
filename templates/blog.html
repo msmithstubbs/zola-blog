@@ -1,4 +1,5 @@
 {% extends "base.html" %} {% block content %}
+{% include "includes/header.html" %}
 
 <h1 class="title">{{ section.title }}</h1>
 <!-- If you are using pagination, section.pages will be empty. You need to use the paginator object -->
@@ -7,14 +8,10 @@
 <ul>
     {% for page in posts %}
     <li>
-        <a href="{{ page.permalink | safe }}" style="margin-right: 0.3rem"
-            >{{ page.title }}</a
-        >
-        {% if page.taxonomies.tags %} {% for tag in page.taxonomies.tags %}
-        <a href=""><em>#{{ tag }}</em></a>
+        <a href="{{ page.permalink | safe }}">{{ page.title }}</a>
 
-        {% endfor %} {% endif %}
-         {% endfor %}
+        {% include "includes/tags.html" %}
     </li>
+    {% endfor %}
 </ul>
 {% endfor %} {% endblock content %}

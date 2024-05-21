@@ -1,5 +1,6 @@
 +++
 title = "Setting up a Cloudflare Tunnel for Shopify app development"
+aliases = ["elixir/cloudflare/2023/05/05/setup-cloudflare-tunnel-for-shopify-webhooks/"]
 [taxonomies]
 tags = [ "cloudflare"]
 +++
@@ -39,5 +40,6 @@ ingress:
 
 Then add a CNAME record for the domain:
 
-![](/assets/img/cloudflare-tunnel.png)
+<img src="cloudflare-tunnel.png" />
 
+{{ figure(img="cloudflare-tunnel.png") }}

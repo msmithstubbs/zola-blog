@@ -1,0 +1,8 @@
+{% if page.taxonomies.tags %} {% for tag in page.taxonomies.tags %}
+<ul class="tags">
+    <li>
+        <a href="/tags/{{tag}}"><em>#{{ tag }}</em></a>
+    </li>
+</ul>
+
+{% endfor %} {% endif %}

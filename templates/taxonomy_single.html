@@ -1,0 +1,14 @@
+{% extends "base.html" %} {% block content %} {% include "includes/header.html"
+%}
+<h1 class="title">{{ term.name }}</h1>
+<ul>
+    {% for page in term.pages %}
+    <li>
+        <a href="{{ term.path }}"> {{ page.title }} </a>
+
+        {% include "includes/tags.html" %}
+    </li>
+    {% endfor %}
+</ul>
+
+{% endblock content %}

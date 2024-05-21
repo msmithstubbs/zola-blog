@@ -1,0 +1,16 @@
+{% extends "base.html" %} {% block content %}
+{% include "includes/header.html" %}
+<h1 class="title">
+{{ taxonomy.name }}
+</h1>
+<ul>
+    {% for term in terms %}
+    <li>
+    <a href="{{ term.path }}">
+            {{ term.name }}
+        </a>
+    </li>
+    {% endfor %}
+</ul>
+
+{% endblock content %}

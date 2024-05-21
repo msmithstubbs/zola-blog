@@ -1,7 +1,7 @@
 +++
 title = "Jeff Bezos on how to be an inventor"
 date = 2019-01-15
-
+aliases = ["quotes/jeff%20bezos/amazon/2019/01/15/bezos-how-to-invent/"]
 [taxonomies]
 tags = ["quote"]
 +++

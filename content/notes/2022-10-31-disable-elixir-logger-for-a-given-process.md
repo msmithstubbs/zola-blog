@@ -1,5 +1,6 @@
 +++
 title = "Disable Elixir Logger for a given process"
+aliases = ["elixir/logger/2022/10/31/disable-elixir-logger-for-a-given-process/"]
 #date: 2022-10-31 11:48 +1000
 [taxonomies]
 tags = ["elixir"]

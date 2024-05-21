@@ -1,14 +1,18 @@
 {% extends "base.html" %} {% block content %}
 
+
 <article>
-    <h1 >Notes</h1>
-    <p class="subtitle">by Matt Stubbs</h1>
-</article>
+    <h1  >Notes</h1>
+    <p class="subtitle">by Matt Stubbs</p>
+    </h1>
+
+
+
 
 
 {% set notes = get_section(path="notes/_index.md") %}
 {{ notes.description }}
-{% for post in notes.pages %}
+{% for post in notes.pages | slice(end=3) %}
 
 <section>
     <h2><a href="{{ post.permalink }}">{{ post.title }}</a></h2>
@@ -26,4 +30,9 @@
 </section>
 
 {% endfor %}
+</article>
+
+<div>
+    <p><a href="/notes">All notes &rarr;</a></p>
+</div>
 {% endblock content %}
