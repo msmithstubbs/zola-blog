@@ -1,5 +1,5 @@
 +++
-title = "What the unique period parameter means for  enqueing jobs in Oban"
+title = "What the unique period parameter means for enqueing jobs in Oban"
 
 [taxonomies]
 tags = ["elixir"]
@@ -11,7 +11,7 @@ Oban lets you set `unique` parameters to avoid creating duplicate jobs.
 If I’m sending an email I want to make sure the job is only inserted once:
 
 ```elixir
-defmodule WelcomeEmailWorker do 
+defmodule WelcomeEmailWorker do
 	use Oban.Worker, unique: [period: 60]
 	...
 end
@@ -25,7 +25,7 @@ This makes sense. A lot of the time this is exactly what you want: if a job is c
 
 ```elixir
 iex> WelcomeEmailWorker.new(%{email: "bob@example.com"}) |> Oban.insert()
-{:ok, 
+{:ok,
 	%Oban.Job{
 		id: 1,
 		inserted_at: ~U[2024-06-01 12:00:00Z],
@@ -37,7 +37,7 @@ iex> WelcomeEmailWorker.new(%{email: "bob@example.com"}) |> Oban.insert()
 
 iex> WelcomeEmailWorker.new(%{email: "bob@example.com"}) |> Oban.insert()
 # An existing job conflicts, so that job is returned
-{:ok, 
+{:ok,
 	%Oban.Job{
 		id: 1,
 		inserted_at: ~U[2024-06-01 12:00:00Z],
@@ -53,13 +53,13 @@ If I want to schedule multiple jobs in advance this becomes a problem. Even if `
 [Soren, the creator of Oban, explains a simple solution](https://elixirforum.com/t/scheduling-jobs-with-unique-contrains/63876/2): set a field in the args that is unique for the day.
 
 ```elixir
-defmodule DailyEmailWorker do 
+defmodule DailyEmailWorker do
 	use Oban.Worker, unique: [period: :infinity, keys: [:email, :date]]
 	...
 end
 
 iex> DailyEmailWorker.new(%{email: "bob@example.com", date: ~D[2024-06-01]}) |> Oban.insert()
-{:ok, 
+{:ok,
 	%Oban.Job{
 		id: 1
 		...
@@ -67,7 +67,7 @@ iex> DailyEmailWorker.new(%{email: "bob@example.com", date: ~D[2024-06-01]}) |> 
 }
 
 iex> DailyEmailWorker.new(%{email: "bob@example.com", date: ~D[2024-06-02]}) |> Oban.insert()
-{:ok, 
+{:ok,
 	%Oban.Job{
 		id: 2
 		...
@@ -75,4 +75,3 @@ iex> DailyEmailWorker.new(%{email: "bob@example.com", date: ~D[2024-06-02]}) |> 
 }
 
 ```
-
