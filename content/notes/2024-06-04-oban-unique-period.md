@@ -12,7 +12,7 @@ If I’m sending an email I want to make sure the job is only inserted once:
 
 ```elixir
 defmodule WelcomeEmailWorker do
-	use Oban.Worker, unique: [period: 60]
+  use Oban.Worker, unique: [period: 60]
 	...
 end
 
@@ -26,24 +26,24 @@ This makes sense. A lot of the time this is exactly what you want: if a job is c
 ```elixir
 iex> WelcomeEmailWorker.new(%{email: "bob@example.com"}) |> Oban.insert()
 {:ok,
-	%Oban.Job{
-		id: 1,
-		inserted_at: ~U[2024-06-01 12:00:00Z],
-		conflict?: false
-		...
-	}
+  %Oban.Job{
+    id: 1,
+    inserted_at: ~U[2024-06-01 12:00:00Z],
+    conflict?: false
+    ...
+  }
 }
 
 
 iex> WelcomeEmailWorker.new(%{email: "bob@example.com"}) |> Oban.insert()
 # An existing job conflicts, so that job is returned
 {:ok,
-	%Oban.Job{
-		id: 1,
-		inserted_at: ~U[2024-06-01 12:00:00Z],
-		conflict?: true
-		...
-	}
+  %Oban.Job{
+    id: 1,
+    inserted_at: ~U[2024-06-01 12:00:00Z],
+    conflict?: true
+    ...
+  }
 }
 
 ```
@@ -54,24 +54,24 @@ If I want to schedule multiple jobs in advance this becomes a problem. Even if `
 
 ```elixir
 defmodule DailyEmailWorker do
-	use Oban.Worker, unique: [period: :infinity, keys: [:email, :date]]
-	...
+  use Oban.Worker, unique: [period: :infinity, keys: [:email, :date]]
+  ...
 end
 
 iex> DailyEmailWorker.new(%{email: "bob@example.com", date: ~D[2024-06-01]}) |> Oban.insert()
 {:ok,
-	%Oban.Job{
-		id: 1
-		...
-	}
+  %Oban.Job{
+    id: 1
+    ...
+  }
 }
 
 iex> DailyEmailWorker.new(%{email: "bob@example.com", date: ~D[2024-06-02]}) |> Oban.insert()
 {:ok,
-	%Oban.Job{
-		id: 2
-		...
-	}
+  %Oban.Job{
+    id: 2
+    ...
+  }
 }
 
 ```
