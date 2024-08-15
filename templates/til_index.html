@@ -1,0 +1,17 @@
+{% extends "base.html" %} {% block content %} {% include "includes/header.html"
+%}
+
+<h1 class="title">{{ section.title }}</h1>
+<!-- If you are using pagination, section.pages will be empty. You need to use the paginator object -->
+{% for year, posts in section.pages | group_by(attribute="year") %}
+<h2>{{ year }}</h2>
+<ul>
+    {% for page in posts %}
+    <li>
+        <a href="{{ page.permalink | safe }}">{{ page.title }}</a>
+
+        {% include "includes/tags.html" %}
+    </li>
+    {% endfor %}
+</ul>
+{% endfor %} {% endblock content %}
