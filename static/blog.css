@@ -1,3 +1,15 @@
+h1,
+h2,
+h3 {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+    font-style: normal;
+}
+
+pre code {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+}
 header {
     p {
         font-variant: small-caps;
@@ -47,3 +59,5 @@ ul.tags {
         }
     }
 }
+
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
