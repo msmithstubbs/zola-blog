@@ -11,8 +11,14 @@
 
 
 {% set notes = get_section(path="notes/_index.md") %}
+{% set til = get_section(path="til/_index.md") %}
+{% set links = get_section(path="links/_index.md") %}
+
+{% set pages = notes.pages | concat(with=til.pages) | concat(with=links.pages) | sort(attribute="date") | reverse %}
+
 {{ notes.description }}
-{% for post in notes.pages | slice(end=3) %}
+
+{% for post in pages | slice(end=3) %}
 
 <section>
     <h2><a href="{{ post.permalink }}">{{ post.title }}</a></h2>
