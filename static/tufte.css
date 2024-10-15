@@ -577,3 +577,7 @@ label.margin-toggle:not(.sidenote-number) {
         width: 100%;
     }
 }
+
+pre.language-txt code {
+    text-wrap: balance;
+}
