@@ -8,6 +8,7 @@ h3 {
 pre code {
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
+    width: auto;
 }
 header {
     p {
