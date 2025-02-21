@@ -22,10 +22,7 @@
     </head>
 
     <body>
-
-            <main class="container">{% block content %} {% endblock %}</main>
-    </body>
-
+            {% block content %} {% endblock %}
     <footer>
       <p>&copy; {{ now()|date(format="%Y") }}</p>
 
@@ -53,4 +50,5 @@
         </a></li>
       </ul>
     </footer>
+    </body>
 </html>
