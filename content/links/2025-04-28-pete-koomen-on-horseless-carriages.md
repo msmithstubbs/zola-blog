@@ -3,7 +3,9 @@ title="Pete Koomen on Horseless carriages"
 url="https://koomen.dev/essays/horseless-carriages/"
 +++
 
-> Whenever a new technology is invented, the first tools built with it inevitably fail because they mimic the old way of doing things.
+{% quote(footer="[AI Horseless Carriages, Pete Koomen](https://koomen.dev/essays/horseless-carriages/)") %}
+Whenever a new technology is invented, the first tools built with it inevitably fail because they mimic the old way of doing things.
+{% end %}
 
 Pete Koomen uses Gmail's Gemini integration to illustrate that a lot of the current AI-powered apps aren't actually that useful. He asks Gemini to draft an email, and it fails at adopting his own tone and style.
 

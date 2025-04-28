@@ -1,0 +1,4 @@
+<blockquote>
+    {{ body | markdown | safe }}
+    <footer>{{footer | markdown(inline=true) | safe }}</footer>
+</blockquote>
