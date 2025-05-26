@@ -6,7 +6,7 @@ tags = ["ai"]
 
 A common concern I hear from people when I mention how much I use generative AI is “But how can you trust the answer?” Well, I don’t.
 
-I use AI to research and answer questions, but the response I get is a starting point for solving my task. I might ask ChatGPT to take list of my son’s football games and create events I can import into iCal, or research a three month forecast for the rainfall in my local area.
+I use AI to research and answer questions, but the response I get is a starting point for solving my task. I might ask ChatGPT to take a list of my son’s football games and create events I can import into iCal, or research a three month forecast for the rainfall in my local area.
 
 I can import the events into iCal but I’ll scan down the list to make sure it appears correct against the official list. This takes a bit longer, and if I’m going to check them why not enter each one myself? If I did, I’d check it anyway. I can make mistakes, too, particularly entering a list of similar, repetitive data into a calendar.
 
