@@ -1,0 +1,12 @@
+---
+import Base from '../../layouts/Base.astro';
+const posts = Object.values(import.meta.glob('./*.md', { eager: true })).map(p => ({ ...p.frontmatter, url: p.url }));
+---
+<Base title="Notes">
+  <h1>Notes</h1>
+  <ul>
+    {posts.sort((a,b)=> new Date(b.date)-new Date(a.date)).map(p => (
+      <li><a href={p.url}>{p.title}</a></li>
+    ))}
+  </ul>
+</Base>

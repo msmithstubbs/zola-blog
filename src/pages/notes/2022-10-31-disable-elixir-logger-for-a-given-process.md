@@ -1,0 +1,21 @@
+---
+title: Disable Elixir Logger for a given process
+aliases:
+  - elixir/logger/2022/10/31/disable-elixir-logger-for-a-given-process/
+taxonomies:
+  tags:
+    - elixir
+---
+
+It can be useful to disable the Elixir Logger output for a function that runs
+frequently, particularly if the function is recalled frequently or repetitively.
+
+To disable the logger for the current process set the log level to `none`:
+
+```elixir
+Logger.put_process_level(self(), :none)
+```
+
+Any other processes will continue to log with the default level.
+
+
