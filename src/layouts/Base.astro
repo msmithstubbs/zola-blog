@@ -1,0 +1,45 @@
+---
+const { title = 'Notes by Matt Stubbs' } = Astro.props;
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>{title}</title>
+    <link rel="stylesheet" href="/tufte.min.css" />
+    <link rel="stylesheet" href="/blog.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <style>
+      h1, h2, h3 {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-style: normal;
+      }
+      pre code { padding-top: 1.25rem; padding-bottom: 1.25rem; }
+    </style>
+  </head>
+  <body>
+    <slot />
+    <footer>
+      <p>&copy; {new Date().getFullYear()}</p>
+      <ul>
+        <li>
+          <a class="bluesky" href="https://bsky.app/profile/mattstubbs.net" title="Link to Matt's Bluesky profile">
+            <!-- truncated svg for brevity -->
+          </a>
+        </li>
+        <li>
+          <a href="https://twitter.com/msmithstubbs" title="@msmithstubbs">
+            <!-- svg truncated -->
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/msmithstubbs" title="github.com/msmithstubbs">
+            <!-- svg truncated -->
+          </a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>
