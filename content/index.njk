@@ -1,0 +1,26 @@
+---
+layout: base.njk
+permalink: /
+---
+
+<article>
+    <h1>Notes</h1>
+    <p class="subtitle">by Matt Stubbs</p>
+
+{% for post in collections.allPosts | reverse | slice(0, 3) %}
+<section>
+    <h2><a href="{{ post.url }}">{{ post.data.title }}</a></h2>
+    <h3>{{ post.date | formatDate("%d %B %Y") }}</h3>
+
+    {% if post.data.summary %}
+        {{ post.data.summary | safe }}
+    {% else %}
+        {{ post.templateContent | safe }}
+    {% endif %}
+</section>
+{% endfor %}
+</article>
+
+<div>
+    <p><a href="/notes/">All notes &rarr;</a></p>
+</div>

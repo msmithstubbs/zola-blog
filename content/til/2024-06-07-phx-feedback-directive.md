@@ -1,9 +1,12 @@
-+++
-title = "Replacing `phx-feedback-for` directive in Phoenix LiveView"
-
-[taxonomies]
-tags = ["til", "elixir"]
-+++
+---
+layout: blog-page.njk
+date: 2024-06-07
+title: "Replacing `phx-feedback-for` directive in Phoenix LiveView"
+tags:
+  - til
+  - elixir
+permalink: "/til/phx-feedback-directive/"
+---
 
 Phoenix provided a `phx-feedback-for` directive to help with styling form error messages ([Phoenix Form Bindings](https://hexdocs.pm/phoenix_live_view/form-bindings.html#error-feedback)).
 

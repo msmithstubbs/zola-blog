@@ -1,9 +1,14 @@
-+++
-title = "Building a lightweight cron job with Cloudflare Workers"
-aliases = ["cloudflare/workers/2023/08/14/building-with-cloudflare-workers/"]
-[taxonomies]
-tags = ["cloudflare", "workers"]
-+++
+---
+layout: blog-page.njk
+date: 2023-08-14
+title: "Building a lightweight cron job with Cloudflare Workers"
+aliases:
+  - cloudflare/workers/2023/08/14/building-with-cloudflare-workers/
+tags:
+  - cloudflare
+  - workers
+permalink: "/notes/building-with-cloudflare-workers/"
+---
 
 Imagine you have thousands and thousands of commodity servers running in data centers all over the world. These servers are close to the end user so the response time is fast. Wouldn't it be great if you could write scripts that run on these servers?  Make sure it’s distributed, so you deploy once and it's available in every location. But it's also cheap, secure, and fast.
 

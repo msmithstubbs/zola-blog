@@ -1,8 +1,15 @@
-+++
-title = "Ken Kocienda on the simplest thing that might work"
-[taxonomies]
-tags = ["book", "lessons", "software", "talk"]
-+++
+---
+layout: blog-page.njk
+date: 2024-08-09
+title: "Ken Kocienda on the simplest thing that might work"
+tags:
+  - book
+  - lessons
+  - software
+  - talk
+permalink: "/notes/ken-kocienda-a-strategy-for-great-work/"
+---
+
 Ken Kocienda is a software engineer and 15-year veteran of Apple. Ken worked at Apple during some of the company’s most interesting and transformative years. He joined shortly after the launch of Mac OS X, worked on key technology for the iPhone, and continued on until the launch of the iPad. He had a front-row seat to the most exciting tech product development of our time.
 
 At Apple’s Worldwide Developer Conference in 2014, Ken delivered a presentation titled *A Strategy for Great Work*. The video recording is no longer online, which is a shame. It’s a thoughtful and unassuming reflection on some of the key lessons Ken learnt at Apple. (You can still find [the presentation slides](https://devstreaming-cdn.apple.com/videos/wwdc/2014/237xxcyp7vhx2xt/237/237_a_strategy_for_great_work.pdf) and a [text transcript](https://asciiwwdc.com/2014/sessions/237_q-kenkocienda) online).

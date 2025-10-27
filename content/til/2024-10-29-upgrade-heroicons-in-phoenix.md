@@ -1,9 +1,14 @@
-+++
-title="How to upgrade Heroicons in an existing Phoenix app"
-[taxonomies]
-tags = ["elixir", "phoenix", "til", "postgres"]
-+++
-
+---
+layout: blog-page.njk
+date: 2024-10-29
+title: "How to upgrade Heroicons in an existing Phoenix app"
+tags:
+  - elixir
+  - phoenix
+  - til
+  - postgres
+permalink: "/til/upgrade-heroicons-in-phoenix/"
+---
 
 Heroicons are a set of SVG icons stored in `assets/vendor/heroicons`. They are setup when you run `mix phx.new` along with
 a handy `UPGRADE.MD` file that explains the simple upgrade process:

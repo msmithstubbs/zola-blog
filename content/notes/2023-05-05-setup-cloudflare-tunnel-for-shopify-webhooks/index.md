@@ -1,9 +1,13 @@
-+++
-title = "Setting up a Cloudflare Tunnel for Shopify app development"
-aliases = ["elixir/cloudflare/2023/05/05/setup-cloudflare-tunnel-for-shopify-webhooks/"]
-[taxonomies]
-tags = [ "cloudflare"]
-+++
+---
+layout: blog-page.njk
+date: 2023-05-05
+title: "Setting up a Cloudflare Tunnel for Shopify app development"
+aliases:
+  - elixir/cloudflare/2023/05/05/setup-cloudflare-tunnel-for-shopify-webhooks/
+tags:
+  - cloudflare
+permalink: "/notes/setup-cloudflare-tunnel-for-shopify-webhooks/"
+---
 
 Cloudflare offers a service called Tunnel. It does lots of secure, enterprisey things but you can also use it to connect a domain to your local development environment. You install a client, run it and specify the local port you want traffic to connect to. Cloudflare will assign a temporary domain (something like `abcd-1234.cfargotunnel.com`). When you open `https://abcd-1234.cfargotunnel.com` in your browser Cloudflare forwards the request to your local machine on the port you specify.
 
@@ -40,4 +44,4 @@ ingress:
 
 Then add a CNAME record for the domain:
 
-{{ figure(img="cloudflare-tunnel.png") }}
+{% figure "cloudflare-tunnel.png", "" %}

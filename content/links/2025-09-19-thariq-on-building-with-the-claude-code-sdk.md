@@ -1,8 +1,14 @@
-+++
-title="Thariq on building with the Claude Code SDK"
-[taxonomies]
-tags = ["link", "llm", "claude", "agents"]
-+++
+---
+layout: blog-page.njk
+date: 2025-09-19
+title: "Thariq on building with the Claude Code SDK"
+tags:
+  - link
+  - llm
+  - claude
+  - agents
+permalink: "/links/thariq-on-building-with-the-claude-code-sdk/"
+---
 
 [Thariq on X](https://x.com/trq212):
 

@@ -1,9 +1,13 @@
-+++
-title = "How to start Phoenix with a node name"
-
-[taxonomies]
-tags = ["elixir", "livebook", "til"]
-+++
+---
+layout: blog-page.njk
+date: 2025-03-26
+title: "How to start Phoenix with a node name"
+tags:
+  - elixir
+  - livebook
+  - til
+permalink: "/til/how-to-start-phoenix-with-a-node-name/"
+---
 
 It can be handy to start Phoenix with a node name and cookie. This is often used in distributed systems in production, but I find it handy to use in development with Livebook.
 

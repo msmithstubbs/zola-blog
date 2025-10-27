@@ -1,10 +1,14 @@
-+++
-title = "aha converts ANSI shell output to HTML"
-url = "https://github.com/theZiz/aha"
-[taxonomies]
-tags = ["shell", "html", "tool"]
-+++
-
+---
+layout: blog-page.njk
+date: 2025-02-05
+title: "aha converts ANSI shell output to HTML"
+url: "https://github.com/theZiz/aha"
+tags:
+  - shell
+  - html
+  - tool
+permalink: "/links/aha-converts-ansi-shell-output-to-html/"
+---
 
 [aha](https://github.com/theZiz/aha) converts ANSI escape sequeneces, like those used for coloured shell output, into HTML.
 

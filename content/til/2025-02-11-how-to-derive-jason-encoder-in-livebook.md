@@ -1,9 +1,12 @@
-+++
-title = "How to derive Jason.Encoder in Livebook"
-
-[taxonomies]
-tags = ["elixir", "livebook"]
-+++
+---
+layout: blog-page.njk
+date: 2025-02-11
+title: "How to derive Jason.Encoder in Livebook"
+tags:
+  - elixir
+  - livebook
+permalink: "/til/how-to-derive-jason-encoder-in-livebook/"
+---
 
 I ran into the issue of trying to include `@derive Jason.Encoer` in a struct while working Livebook.
 

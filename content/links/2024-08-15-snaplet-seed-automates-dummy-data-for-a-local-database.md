@@ -1,8 +1,12 @@
-+++
-title = "snaplet/seed automates dummy data for a local database"
-[taxonomies]
-tags = ["javascript", "tools"]
-+++
+---
+layout: blog-page.njk
+date: 2024-08-15
+title: "snaplet/seed automates dummy data for a local database"
+tags:
+  - javascript
+  - tools
+permalink: "/links/snaplet-seed-automates-dummy-data-for-a-local-database/"
+---
 
 [snaplet/seed](https://github.com/snaplet/seed) takes a database schema and uses AI to generate fake data, including relationships, to make testing and development easier.
 

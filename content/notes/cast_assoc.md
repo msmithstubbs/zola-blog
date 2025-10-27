@@ -1,9 +1,12 @@
-+++
-title = "cast_assoc/3 for updating a subset of associations"
-date = 2024-04-30
-[taxonomies]
-tags = ["elixir", "ecto"]
-+++
+---
+layout: blog-page.njk
+title: "cast_assoc/3 for updating a subset of associations"
+date: "2024-04-30"
+tags:
+  - elixir
+  - ecto
+permalink: "/notes/cast_assoc/"
+---
 
 `cast_assoc/3` ([docs](https://hexdocs.pm/ecto/Ecto.Changeset.html#cast_assoc/3)) has as interesting feature: it will only cast data for records that are preloaded.
 

@@ -1,9 +1,11 @@
-+++
-title = "Adam Wiggins on the ‘Small Giants’ Approach for Muse"
-[taxonomies]
-tags = ["quote"]
-+++
-
+---
+layout: blog-page.njk
+date: 2024-03-06
+title: "Adam Wiggins on the ‘Small Giants’ Approach for Muse"
+tags:
+  - quote
+permalink: "/notes/adam-wiggins-on-small-giants/"
+---
 
 > Our [“small giants”](https://museapp.com/podcast/24-small-giants/) approach optimized for mojo over growth. We wanted a small, talent-dense team with a focus on craft, autonomy, and quality of life for all team members. We banished the term “founder” in favor of “partner” and tried to be transparent with all business matters across the team.
 

@@ -1,7 +1,10 @@
-+++
-title="Teaching Claude to chat with Xero"
-draft=true
-+++
+---
+layout: blog-page.njk
+date: 2025-04-10
+title: "Teaching Claude to chat with Xero"
+draft: "true"
+permalink: "/notes/teaching-claude-to-chat-with-xero/"
+---
 
 Building My Own Xero AI Agent
 

@@ -1,8 +1,10 @@
-+++
-title = "erlang-red is a flow-based environment for Erlang"
-url = "https://github.com/gorenje/erlang-red"
-[taxonomies]
-+++
+---
+layout: blog-page.njk
+date: 2025-05-20
+title: "erlang-red is a flow-based environment for Erlang"
+url: "https://github.com/gorenje/erlang-red"
+permalink: "/links/erlang-red-is-a-flow-based-environment-for-erlang/"
+---
 
 Another example of a flow-based programming environment. Based on
 [Node-RED](https://nodered.org/), and there are

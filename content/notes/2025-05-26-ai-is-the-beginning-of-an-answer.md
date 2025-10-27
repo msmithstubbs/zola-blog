@@ -1,8 +1,11 @@
-+++
-title = "AI is the beginning of an answer"
-[taxonomies]
-tags = ["ai"]
-+++
+---
+layout: blog-page.njk
+date: 2025-05-26
+title: "AI is the beginning of an answer"
+tags:
+  - ai
+permalink: "/notes/ai-is-the-beginning-of-an-answer/"
+---
 
 A common concern I hear from people when I mention how much I use generative AI is “But how can you trust the answer?” Well, I don’t.
 

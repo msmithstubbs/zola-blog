@@ -1,9 +1,12 @@
-+++
-title = "Canonical log lines"
-
-[taxonomies]
-tags = ["tools", "devx"]
-+++
+---
+layout: blog-page.njk
+date: 2024-09-17
+title: "Canonical log lines"
+tags:
+  - tools
+  - devx
+permalink: "/notes/canonical-log-lines/"
+---
 
 Canonical log lines are a concept introduced in the Stripe blog post [Fast and flexible observability with canonical log lines](https://stripe.com/blog/canonical-log-lines) :
 

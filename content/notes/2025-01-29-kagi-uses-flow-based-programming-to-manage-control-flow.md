@@ -1,9 +1,12 @@
-+++
-title = "Kagi uses flow based programming to manage control flow"
-date = 2025-01-29
-[taxonomies]
-tags = ["kagi", "software"]
-+++
+---
+layout: blog-page.njk
+title: "Kagi uses flow based programming to manage control flow"
+date: "2025-01-29"
+tags:
+  - kagi
+  - software
+permalink: "/notes/kagi-uses-flow-based-programming-to-manage-control-flow/"
+---
 
 [Zac Nowicki](https://github.com/z64) from [Kagi](https://kagi.com) on how Flow Based Programming is used to manage control flow:
 

@@ -1,9 +1,15 @@
-+++
-title = "Almost Full SSL With Cloudflare And Amazon S3"
-aliases = ["2019/08/28/almost-full-ssl-with-cloudflare-and-amazon-s3/"]
-[taxononomies]
-tags = ["cloudflare", "s3", "aws"]
-+++
+---
+layout: blog-page.njk
+date: 2019-08-28
+title: "Almost Full SSL With Cloudflare And Amazon S3"
+aliases:
+  - 2019/08/28/almost-full-ssl-with-cloudflare-and-amazon-s3/
+tags:
+  - cloudflare
+  - s3
+  - aws
+permalink: "/notes/almost-full-ssl-with-cloudflare-and-amazon-s3/"
+---
 
 Storing static content on S3 and then putting Cloudflare in front of it is an easy and cheap way to serve content fast.
 
@@ -23,9 +29,6 @@ But Flexible SSL affects the whole site. Any requests on the root domain, where 
 ## Almost Full SSL with a page rule.
 The easiest option is to leave Full SSL enabled for the site and then create a [page rule](https://support.cloudflare.com/hc/en-us/articles/218411427) to use Flexible SSL just for the subdomain.
 
-{{ figure(img="cloudflare-page-rule.png", alt="Screenshot of the Cloudflare page rule UI") }}
-
-![]()
-
+{% figure "cloudflare-page-rule.png", "Screenshot of the Cloudflare page rule UI" %}
 
 This means requests to `https://exampleapp.com` are secure all the way to the origin server. Requests to `https://static.exampleapp.com` are partly secure. Cloudflare uses HTTP to make the actual request to S3 which is fine for publicly available content like site stylesheets. The response is sent back to the user over HTTPS.

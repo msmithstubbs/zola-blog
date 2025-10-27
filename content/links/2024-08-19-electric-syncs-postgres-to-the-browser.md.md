@@ -1,8 +1,14 @@
-+++
-title="electric: sync postgres to the browser"
-[taxonomies]
-tags = ["link", "typescript", "elixir", "postgres"]
-+++
+---
+layout: blog-page.njk
+date: 2024-08-19
+title: "electric: sync postgres to the browser"
+tags:
+  - link
+  - typescript
+  - elixir
+  - postgres
+permalink: "/links/electric-syncs-postgres-to-the-browser.md/"
+---
 
 > [Electric](https://github.com/electric-sql/electric) provides an [HTTP API](https://next.electric-sql.com/api/http) for syncing [Shapes](https://next.electric-sql.com/guides/shapes) of data from Postgres.
 

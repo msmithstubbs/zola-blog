@@ -1,10 +1,11 @@
-+++
-title = "What the unique period parameter means for enqueing jobs in Oban"
-
-[taxonomies]
-tags = ["elixir"]
-
-+++
+---
+layout: blog-page.njk
+date: 2024-06-04
+title: "What the unique period parameter means for enqueing jobs in Oban"
+tags:
+  - elixir
+permalink: "/til/oban-unique-period/"
+---
 
 Oban lets you set `unique` parameters to avoid creating duplicate jobs.
 

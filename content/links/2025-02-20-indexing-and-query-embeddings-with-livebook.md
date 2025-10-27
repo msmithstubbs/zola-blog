@@ -1,9 +1,15 @@
-+++
-title="Indexing and querying with embeddings and Livebook"
-url="https://www.youtube.com/watch?v=1QCwtyQ7Ctc&t=7s"
-[taxonomies]
-tags = ["elixir", "livebook", "embeddings", "tutorial"]
-+++
+---
+layout: blog-page.njk
+date: 2025-02-20
+title: "Indexing and querying with embeddings and Livebook"
+url: "https://www.youtube.com/watch?v=1QCwtyQ7Ctc&t=7s"
+tags:
+  - elixir
+  - livebook
+  - embeddings
+  - tutorial
+permalink: "/links/indexing-and-query-embeddings-with-livebook/"
+---
 
 In his video [Vector Search Demystified: Embedding and Reranking](https://www.youtube.com/watch?v=1QCwtyQ7Ctc&t=7s)
  [Zack Siri](https://zacksiri.dev/) uses Elixir and Livebook to demonstate how to index and query 100,000 embeddings.

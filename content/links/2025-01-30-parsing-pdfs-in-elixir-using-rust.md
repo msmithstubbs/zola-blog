@@ -1,8 +1,15 @@
-+++
-title = "Parsing PDFs in Elixir using Rust"
-[taxonomies]
-tags = ["elixir", "rust", "pdf", "tools", "parsing"]
-+++
+---
+layout: blog-page.njk
+date: 2025-01-30
+title: "Parsing PDFs in Elixir using Rust"
+tags:
+  - elixir
+  - rust
+  - pdf
+  - tools
+  - parsing
+permalink: "/links/parsing-pdfs-in-elixir-using-rust/"
+---
 
 [Parsing PDFs (and more) in Elixir using Rust](https://www.chriis.dev/opinion/parsing-pdfs-in-elixir-using-rust)
 

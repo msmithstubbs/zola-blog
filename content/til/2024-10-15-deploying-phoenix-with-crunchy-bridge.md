@@ -1,10 +1,14 @@
-+++
-title = "Notes on deploying Phoenix application to fly.io with Crunchy Data postgres"
+---
+layout: blog-page.njk
+date: 2024-10-15
+title: "Notes on deploying Phoenix application to fly.io with Crunchy Data postgres"
+tags:
+  - elixir
+  - til
+  - postgres
+permalink: "/til/deploying-phoenix-with-crunchy-bridge/"
+---
 
-[taxonomies]
-tags = ["elixir", "til", "postgres"]
-
-+++
 Deploying an Elixir Phoenix app to fly.io with Postgres running on Crunchy Data works well but there a couple of steps to get it all working. I’m making a note of it here for future reference.
 
 ## Crunchy Bridge requires IPv4

@@ -1,9 +1,13 @@
-+++
-title="Porting a vim theme to Zed with o3-mini"
-[taxonomies]
-tags=["zed", "openai", "prompts"]
-+++
-
+---
+layout: blog-page.njk
+date: 2025-02-21
+title: "Porting a vim theme to Zed with o3-mini"
+tags:
+  - zed
+  - openai
+  - prompts
+permalink: "/notes/porting-a-vim-theme-to-zed-with-o3-mini/"
+---
 
 I came across an editor theme called [Everforest](https://github.com/sainnhe/everforest). It's available in dark and light variants, and I wanted to try it out.
 
@@ -76,9 +80,9 @@ This time I got a response back almost immediately. I’m guessing this because 
 The result was better than the first one from `o3-mini`. This time the status bar was the correct colour. Only a few small changes but definitley better.
 
 The cost for this one was 32,189 input tokens and 1,952 output tokens.
-{% sidenote() %}
-I was surprised to see a _lower_ number of input tokens when the prompt was slighly longer and I’d included an image this time. I assume this is down to a difference in the models and the way they each tokenise content.
-{% end %}
+{% sidenote %}
+I was surprised to see a _lower_ number of input tokens when the prompt was slighly longer and I'd included an image this time. I assume this is down to a difference in the models and the way they each tokenise content.
+{% endsidenote %}
 
 No reasoning means less output tokens. `gpt-4o` is a more than twice the cost of `o3-mini` . Even with the lower number of output tokens the cost was slighly higher at $0.10.
 
